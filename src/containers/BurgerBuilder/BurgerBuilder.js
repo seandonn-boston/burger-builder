@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from '../../axios-orders';
 
 import Aux from '../../hoc/Aux/Aux';
 import Burger from '../../components/Burger/Burger';
@@ -81,7 +82,25 @@ class BurgerBuilder extends Component {
   }
 
   purchaseContinueHandler = () => {
-    alert('You Continue! this is a placeholder');
+    const order = {
+      ingredients: this.state.ingredients,
+      price: this.state.totalPrice,
+      customer: {
+        name: 'Sean Donn',
+        email: 'sean@seandonn.io',
+        address: {
+          street: '125 Summer Street',
+          city: 'Boston',
+          state: 'MA',
+          zipCode: '02110',
+          country: 'USA'
+        }
+      },
+      deliveryMethod: 'fastest'
+    }
+    axios.post('/orders.json', order)
+      .then(res => console.log('res is ', res))
+      .catch(err => console.log('err is ', err));
   }
 
   render () {
