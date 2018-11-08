@@ -6,8 +6,8 @@ A React.js Single Page Application
 
 ## API Endpoints
 - baseURL: https://burger-builder-e4458.firebaseio.com/
-- POST: /orders.json
-- 
+- /orders.json
+- /ingredients.json
 
 ## Technologies used
 - React.js
