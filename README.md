@@ -9,8 +9,6 @@ A React.js Single Page Application
 - /orders.json
 - /ingredients.json
 
-## Routes
-
 ## Technologies used
 - React.js
 - Firebase
