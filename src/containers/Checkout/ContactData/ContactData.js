@@ -172,6 +172,7 @@ class ContactData extends Component {
     for (let key in this.state.orderForm) {
       formElementsArray.push({
         id: key,
+        name: key,
         config: this.state.orderForm[key]
       });
     }
@@ -180,6 +181,7 @@ class ContactData extends Component {
         {formElementsArray.map(formElement => (
           <Input
             key={formElement.id}
+            name={formElement.name}
             elementType={formElement.config.elementType}
             elementConfig={formElement.config.elementConfig}
             value={formElement.config.value}
