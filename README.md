@@ -17,3 +17,5 @@ A React.js Single Page Application
 - prop-types package
 - axios package
 - react-router-dom
+- redux
+- react-redux
