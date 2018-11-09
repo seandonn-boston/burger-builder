@@ -4,6 +4,7 @@ import axios from '../../../axios-orders';
 import Button from '../../../components/UI/Button/Button';
 import Spinner from '../../../components/UI/Spinner/Spinner';
 import classes from './ContactData.css';
+import Input from '../../../components/UI/Input/Input'
 
 class ContactData extends Component {
   state = {
@@ -52,14 +53,14 @@ class ContactData extends Component {
   render() {
     let form = (
       <form>
-        <input className={classes.Input} type="text" name="name" placeholder="Your Name" />
-        <input className={classes.Input} type="email" name="email" placeholder="Your Email" />
-        <input className={classes.Input} type="text" name="street" placeholder="Your Street" />
-        <input className={classes.Input} type="text" name="city" placeholder="Your City" />
-        <input className={classes.Input} type="text" name="state" placeholder="Your State" />
-        <input className={classes.Input} type="text" name="zipcode" placeholder="Your Zip Code" />
-        <input className={classes.Input} type="text" name="country" placeholder="Your Country" />
-        <input className={classes.Input} type="text" name="delivery method" placeholder="Your Delivery Method preferencwe" />
+        <Input inputtype="input" type="text" name="name" placeholder="Your Name" />
+        <Input inputtype="input" type="email" name="email" placeholder="Your Email" />
+        <Input inputtype="input" type="text" name="street" placeholder="Your Street" />
+        <Input inputtype="input" type="text" name="city" placeholder="Your City" />
+        <Input inputtype="input" type="text" name="state" placeholder="Your State" />
+        <Input inputtype="input" type="text" name="zipcode" placeholder="Your Zip Code" />
+        <Input inputtype="input" type="text" name="country" placeholder="Your Country" />
+        <Input inputtype="input" type="text" name="delivery method" placeholder="Your Delivery Method preferencwe" />
         <Button btnType="Success" clicked={this.orderHandler}>ORDER NOW</Button>
       </form>
     );
