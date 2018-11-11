@@ -6,7 +6,7 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-  swicth (action.type) {
+  switch (action.type) {
     case actionTypes.PURCHASE_BURGER_SUCCESS:
     const newOrder = {
       ...action.orderData,
