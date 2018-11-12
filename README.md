@@ -19,3 +19,4 @@ A React.js Single Page Application
 - react-router-dom
 - redux
 - react-redux
+- redux-thunk
