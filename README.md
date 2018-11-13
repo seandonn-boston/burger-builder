@@ -12,6 +12,8 @@ A React.js Single Page Application
 ## Technologies used
 - React.js
 - Firebase
+- Jest
+- Enzyme
 
 ## 3rd Party Packages
 - prop-types package
